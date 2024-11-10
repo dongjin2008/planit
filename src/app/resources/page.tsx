@@ -13,27 +13,26 @@ import { TableAction } from "@/components/ui/table-action"
 import { Badge } from "@/components/ui/badge"
 
 
-export default function Page() {
+const  Resources = () => {
   return (
     <main className="bg-background flex flex-col w-full p-8 gap-4">
-      <div className="flex justify-between text-6xl">
-        <h1>2H 50M</h1>
-        <h1>D-73</h1>
+      <div className="flex justify-center text-6xl">
+        <h1>Resources</h1>
       </div>
       <Table>
-        <TableCaption>A list of your tasks.</TableCaption>
+        <TableCaption>A list of your resources.</TableCaption>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">Priority</TableHead>
-            <TableHead>Status</TableHead>
-            <TableHead>Task</TableHead>
+            <TableHead className="w-[100px]">Subject</TableHead>
+            <TableHead>Date</TableHead>
+            <TableHead>Resource</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell className="font-medium">3</TableCell>
-            <TableCell>ToDo</TableCell>
-            <TableCell><Badge className="mr-2">HomeWork</Badge>Do the homework</TableCell>
+            <TableCell className="font-medium">Math</TableCell>
+            <TableCell>2024/11/10</TableCell>
+            <TableCell>수학 삼각함수 기출</TableCell>
             <TableCell className="text-right"><TableAction /></TableCell>
           </TableRow>
         </TableBody>
@@ -42,3 +41,5 @@ export default function Page() {
     </main>
   );
 }
+
+export default Resources;
